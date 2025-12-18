@@ -35,6 +35,7 @@ tests = ['init_test',
          'two_input_test_004',
          ]
 
+
 @pytest.mark.parametrize("test_name", tests)
 @pytest.mark.parametrize("simulator", ["verilator", "icarus"])
 @max_score(0)
@@ -62,15 +63,21 @@ def test_style(simulator):
     lint(simulator, timescale, tbpath, parameters, compile_args=["--lint-only", "-Wwarn-style", "-Wno-lint"])
 
 @pytest.mark.parametrize("simulator", ["verilator", "icarus"])
-@max_score(.5)
+@max_score(1)
 def test_all(simulator):
     # This line must be first
     parameters = dict(locals())
     del parameters['simulator']
     runner(simulator, timescale, tbpath, parameters)
 
-
 ### Begin Tests ###
+
+tests = ['init_test',
+         'two_input_test_001',
+         'two_input_test_002',
+         'two_input_test_003',
+         'two_input_test_004',
+         ]
 
 @cocotb.test()
 async def init_test(dut):
@@ -111,11 +118,10 @@ async def two_input_test(dut, a, b):
     await Timer(1, units="ns")
 
     assert_resolvable(dut.c_o)
-    assert dut.c_o.value == (dut.a_i.value == dut.b_i.value) , f"Incorrect Result: {dut.a_i.value} XNOR {dut.b_i.value} != {dut.a_i.value == dut.b_i.value}. Got: {dut.c_o.value} at Time {get_sim_time(units='ns')}ns."
+    assert dut.c_o.value == (dut.a_i.value ^ dut.b_i.value) , f"Incorrect Result: {dut.a_i.value} ^ {dut.b_i.value} != {dut.a_i.value ^ dut.b_i.value}. Got: {dut.c_o.value} at Time {get_sim_time(units='ns')}ns."
 
 tf = TestFactory(test_function=two_input_test)
 
 tf.add_option(name='a', optionlist=[0, 1])
 tf.add_option(name='b', optionlist=[0, 1])
-tf.generate_tests(sys.modules[__name__])
 tf.generate_tests()
