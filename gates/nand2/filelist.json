@@ -1,0 +1,6 @@
+{
+    "top": "nand2",
+    "files":
+    ["gates/nand2/nand2.sv"
+    ]
+}
