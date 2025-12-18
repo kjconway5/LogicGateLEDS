@@ -1,0 +1,18 @@
+{
+  "build": { "dockerfile": "Dockerfile" },
+  "features": {
+  },
+  "customizations": {
+    "vscode": {
+	      "extensions": ["lramseyer.vaporview",
+                       "surfer-project.surfer",
+		                   "hediet.vscode-drawio",
+                       "analytic-signal.preview-pdf",
+                       "stephanvs.dot",
+                       "tomoki1207.pdf",
+                       "danielroedl.meld-diff",
+                       "bmpenuelas.waveform-render",
+		                   "SimonSiefke.svg-preview",]
+    }
+  },
+}
