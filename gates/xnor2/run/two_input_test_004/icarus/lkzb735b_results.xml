@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1766020005" />
+    <testcase name="two_input_test_004" classname="test_xnor2" file="/usr/local/lib/python3.10/dist-packages/cocotb/regression.py" lineno="731" time="0.010402441024780273" sim_time_ns="1.001" ratio_time="96.22741408631477" />
+  </testsuite>
+</testsuites>

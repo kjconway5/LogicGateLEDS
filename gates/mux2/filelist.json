@@ -1,0 +1,6 @@
+{
+    "top": "mux2",
+    "files":
+    ["gates/mux2/mux2.sv"
+    ]
+}

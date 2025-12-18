@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1766020000" />
+    <testcase name="init_test" classname="test_xnor2" file="/workspaces/LogicGateLEDS/gates/xnor2/test_xnor2.py" lineno="75" time="0.010795354843139648" sim_time_ns="1.001" ratio_time="92.72506689635371" />
+  </testsuite>
+</testsuites>

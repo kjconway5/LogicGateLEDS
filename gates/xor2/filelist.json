@@ -1,0 +1,6 @@
+{
+    "top": "xor2",
+    "files":
+    ["gates/xor2/xor2.sv"
+    ]
+}

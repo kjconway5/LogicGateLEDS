@@ -1,0 +1,14 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1766020008" />
+    <testcase name="init_test" classname="test_xnor2" file="/workspaces/LogicGateLEDS/gates/xnor2/test_xnor2.py" lineno="75" time="0.009993553161621094" sim_time_ns="1.001" ratio_time="100.16457448229792" />
+    <testcase name="&lt;module 'test_xnor2' from '/workspaces/LogicGateLEDS/gates/xnor2/test_xnor2.py'&gt;two_input_test_001" classname="test_xnor2" file="/usr/local/lib/python3.10/dist-packages/cocotb/regression.py" lineno="731" time="0.00027942657470703125" sim_time_ns="1.001" ratio_time="3582.336436860068" />
+    <testcase name="&lt;module 'test_xnor2' from '/workspaces/LogicGateLEDS/gates/xnor2/test_xnor2.py'&gt;two_input_test_002" classname="test_xnor2" file="/usr/local/lib/python3.10/dist-packages/cocotb/regression.py" lineno="731" time="0.00019049644470214844" sim_time_ns="1.0010000000000003" ratio_time="5254.6912440550705" />
+    <testcase name="&lt;module 'test_xnor2' from '/workspaces/LogicGateLEDS/gates/xnor2/test_xnor2.py'&gt;two_input_test_003" classname="test_xnor2" file="/usr/local/lib/python3.10/dist-packages/cocotb/regression.py" lineno="731" time="0.00016641616821289062" sim_time_ns="1.0009999999999994" ratio_time="6015.040550143263" />
+    <testcase name="&lt;module 'test_xnor2' from '/workspaces/LogicGateLEDS/gates/xnor2/test_xnor2.py'&gt;two_input_test_004" classname="test_xnor2" file="/usr/local/lib/python3.10/dist-packages/cocotb/regression.py" lineno="731" time="0.00014829635620117188" sim_time_ns="1.0010000000000003" ratio_time="6749.997273311899" />
+    <testcase name="two_input_test_001" classname="test_xnor2" file="/usr/local/lib/python3.10/dist-packages/cocotb/regression.py" lineno="731" time="0.00014495849609375" sim_time_ns="1.0010000000000003" ratio_time="6905.424842105265" />
+    <testcase name="two_input_test_002" classname="test_xnor2" file="/usr/local/lib/python3.10/dist-packages/cocotb/regression.py" lineno="731" time="0.0001494884490966797" sim_time_ns="1.0009999999999994" ratio_time="6696.169543859645" />
+    <testcase name="two_input_test_003" classname="test_xnor2" file="/usr/local/lib/python3.10/dist-packages/cocotb/regression.py" lineno="731" time="0.0001437664031982422" sim_time_ns="1.0009999999999994" ratio_time="6962.683754560527" />
+    <testcase name="two_input_test_004" classname="test_xnor2" file="/usr/local/lib/python3.10/dist-packages/cocotb/regression.py" lineno="731" time="0.00014853477478027344" sim_time_ns="1.0010000000000012" ratio_time="6739.162606741581" />
+  </testsuite>
+</testsuites>
