@@ -1,0 +1,6 @@
+{
+    "top": "or2",
+    "files":
+    ["gates/or2/or2.sv"
+    ]
+}
